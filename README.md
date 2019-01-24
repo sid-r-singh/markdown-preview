@@ -29,7 +29,7 @@ The app stores the state in a separate `state.cljs` file but you could easily us
 
 Thanks to Jacek Schae for his [Shadow Reagent Template](https://github.com/jacekschae/shadow-reagent).
 
-## Licence
+## License
 
 > MIT License
 
