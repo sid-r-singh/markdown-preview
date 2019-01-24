@@ -2,6 +2,8 @@
 
 > with Reagent, Shadow-cljs and Clojurescript
 
+Go to the **[live demo](https://markdown-preview-reagent.firebaseapp.com/)**.
+
 ## How to use
 
 Just type text in markdown format into the textfield. The preview updates automatically.
