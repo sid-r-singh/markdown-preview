@@ -11,12 +11,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#app {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
 a {
   color: #8b9dc3;
 }

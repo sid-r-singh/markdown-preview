@@ -9,7 +9,7 @@
 (defn header
   []
   [:div.tc.ma3
-   [:h.f1.dark-blue "Markdown Preview"]])
+   [:h1.f1.dark-blue "Markdown Preview"]])
 
 (defn textarea
   []
@@ -27,7 +27,7 @@
     [:> ReactMarkdown {:source (:value @app-state)}]]])
 
 (defn app []
-  [:div#app
+  [:div
    [header]
    [textarea]
    [preview]])

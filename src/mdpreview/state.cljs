@@ -12,4 +12,4 @@ Type in some [Markdown text](https://daringfireball.net/projects/markdown/), e.g
 Documentation and more info for this site is available **[HERE](https://github.com/sophiabrandt/markdown-preview)**.
 ")
 
-(def app-state (atom {:value inital-value}))
+(defonce app-state (atom {:value inital-value}))
