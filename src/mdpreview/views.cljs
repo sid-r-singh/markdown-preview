@@ -1,20 +1,29 @@
 (ns mdpreview.views
   (:require [mdpreview.state :refer [app-state]]
-            [mdpreview.events :refer [increment decrement]]))
+            [mdpreview.events :refer [update-preview]]
+            ["react-markdown" :as ReactMarkdown]))
+
+(def placeholder
+  "")
 
 (defn header
   []
   [:div
-   [:h1 "A template for reagent apps"]])
+   [:h1 "Markdown Preview"]])
 
-(defn counter
+(defn textarea
   []
   [:div
-   [:button.btn {:on-click #(decrement %)} "-"]
-   [:button {:disabled true} (get @app-state :count)]
-   [:button.btn {:on-click #(increment %)} "+"]])
+   [:textarea {:placeholder (:value @app-state)
+               :value (:value @app-state)
+               :on-change #(update-preview %)}]])
+
+(defn preview
+  []
+  [:> ReactMarkdown {:source (:value @app-state)}])
 
 (defn app []
   [:div
    [header]
-   [counter]])
+   [textarea]
+   [preview]])

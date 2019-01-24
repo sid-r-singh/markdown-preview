@@ -23,7 +23,7 @@
     "react-dom": "^16.7.0"
   },
   "devDependencies": {
-    "shadow-cljs": "^2.7.17",
-    "tailwindcss": "^0.7.4"
+    "react-markdown": "^4.0.6",
+    "shadow-cljs": "^2.7.17"
   }
 }

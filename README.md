@@ -4,7 +4,8 @@
 
 ## Motivation
 
-I made this project because I enjoy learning. I wanted to see if I can build a Markdown preview with Clojurescript/Reagent.
+I made this project because I enjoy Clojurescript and Reagent.  
+I've created some small projects in React but wanted to see how it compares to Reagent/Clojurescript.
 
 ## Tech/Frameworks Used
 
@@ -13,7 +14,11 @@ I made this project because I enjoy learning. I wanted to see if I can build a M
 - [Clojurescript](https://clojurescript.org/)
 - [Reagent](https://reagent-project.github.io/) (React Wrapper for Clojurescript)
 - [shadow-cljs](http://shadow-cljs.org/) (Clojurescript Compiler)
-- [Tailwind CSS](https://tailwindcss.com)
+- [Tachyons](http://tachyons.io/)
+
+## Credits
+
+Thanks to Jacek Schae for his [Shadow Reagent Template](https://github.com/jacekschae/shadow-reagent).
 
 ## Licence
 

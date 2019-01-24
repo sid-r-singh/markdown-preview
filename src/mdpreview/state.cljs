@@ -1,4 +1,10 @@
 (ns mdpreview.state
   (:require [reagent.core :refer [atom]]))
 
-(defonce app-state (atom {:count 0}))
+(def inital-value
+  "## Welcome to my Reagent/Clojurescript Markdown Previewer!
+   Write some markdown, e.g. in **bold**.
+  ")
+
+
+(defonce app-state (atom {:value inital-value}))
