@@ -2,10 +2,16 @@
 
 > with Reagent, Shadow-cljs and Clojurescript
 
+## How to use
+
+Just type text in markdown format into the textfield. The preview updates automatically.
+
 ## Motivation
 
 I made this project because I enjoy Clojurescript and Reagent.  
 I've created some small projects in React but wanted to see how it compares to Reagent/Clojurescript.
+
+The app stores the state in a separate `state.cljs` file but you could easily use component-local state with a reagent form-2 component.
 
 ## Tech/Frameworks Used
 
@@ -14,6 +20,7 @@ I've created some small projects in React but wanted to see how it compares to R
 - [Clojurescript](https://clojurescript.org/)
 - [Reagent](https://reagent-project.github.io/) (React Wrapper for Clojurescript)
 - [shadow-cljs](http://shadow-cljs.org/) (Clojurescript Compiler)
+- [react-markdown](https://github.com/rexxars/react-markdown)
 - [Tachyons](http://tachyons.io/)
 
 ## Credits

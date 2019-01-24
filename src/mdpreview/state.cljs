@@ -2,9 +2,12 @@
   (:require [reagent.core :refer [atom]]))
 
 (def inital-value
-  "## Welcome to my Reagent/Clojurescript Markdown Previewer!
-   Write some markdown, e.g. in **bold**.
+  "## Welcome to this Reagent/Clojurescript Markdown Previewer!
+   Type in some markdown, e.g. in *italic*.
+   
+   
+   ### Documentation and more info is available **[here](https://github.com/sophiabrandt/markdown-preview)**.
   ")
 
 
-(defonce app-state (atom {:value inital-value}))
+(def app-state (atom {:value inital-value}))
