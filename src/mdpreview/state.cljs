@@ -9,7 +9,7 @@ Type in some [Markdown text](https://daringfireball.net/projects/markdown/), e.g
 
 > Markdown Preview was built with Clojurescript and Reagent.
 
-Documentation and more info for this site is available **[HERE](https://github.com/sophiabrandt/markdown-preview)**.
+Documentation and more info for this site is available on **[Github](https://github.com/sophiabrandt/markdown-preview)**.
 ")
 
 (defonce app-state (atom {:value inital-value}))
