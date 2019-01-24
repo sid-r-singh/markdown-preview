@@ -1,7 +1,6 @@
 {:source-paths ["src"]
 
- :dependencies [[binaryage/dirac "1.3.0"]
-                [reagent "0.8.1"]]
+ :dependencies [[reagent "0.8.1"]]
 
  :nrepl        {:port 3333}
 

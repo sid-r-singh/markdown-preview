@@ -9,15 +9,16 @@
 (defn header
   []
   [:div.tc.ma3
-   [:h.f1 "Markdown Preview"]])
+   [:h.f1.dark-blue "Markdown Preview"]])
 
 (defn textarea
   []
-  [:div.flex.center.justify-center
-   [:textarea.fl.w-90.h5.ma3.pa2.br3.b--black-20
-    {:placeholder (:value @app-state)
-     :value (:value @app-state)
-     :on-change #(update-preview %)}]])
+  (let [text (:value @app-state)]
+    [:div.flex.center.justify-center.
+     [:textarea.fl.w-90.h5.ma3.pa2.br3.b--black-20.outline-0
+      {:placeholder text
+       :value text
+       :on-change #(update-preview %)}]]))
 
 (defn preview
   []
@@ -26,7 +27,7 @@
     [:> ReactMarkdown {:source (:value @app-state)}]]])
 
 (defn app []
-  [:div
+  [:div#app
    [header]
    [textarea]
    [preview]])
