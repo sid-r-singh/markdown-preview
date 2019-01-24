@@ -1,30 +1,29 @@
 (ns mdpreview.views
   (:require [mdpreview.state :refer [app-state]]
-            [mdpreview.events :refer [update-preview]]
+            [mdpreview.events :refer [update-preview, clear-textarea]]
             ["react-markdown" :as ReactMarkdown]))
-
-(def placeholder
-  "")
 
 (defn header
   []
-  [:div.tc.ma3
-   [:h1.f1.dark-blue "Markdown Preview"]])
+  [:div
+   [:h1.f1.dark-blue.tc.ma3 "Markdown Preview"]])
 
 (defn textarea
   []
   (let [text (:value @app-state)]
-    [:div.flex.center.justify-center.
-     [:textarea.fl.w-90.h5.ma3.pa2.br3.b--black-20.outline-0
+    [:div.flex.center.justify-center
+     [:textarea.fl.w-90.h5.ma3.pa2.br3.b--black-20.outline-0.
       {:placeholder text
        :value text
+       :on-focus #(clear-textarea %)
        :on-change #(update-preview %)}]]))
 
 (defn preview
   []
   [:div.flex.center.justify-center
-   [:div#preview.br3.ma3.pa2.bw2.fl.w-90
+   [:div.fl.w-90.br3.ma3.pa2
     [:> ReactMarkdown {:source (:value @app-state)}]]])
+
 
 (defn app []
   [:div
