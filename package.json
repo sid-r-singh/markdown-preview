@@ -1,0 +1,29 @@
+{
+  "name": "markdown-preview",
+  "version": "0.0.1",
+  "description": "A Reagent Markdown Previewer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sophiabrandt/markdown-preview"
+  },
+  "author": {
+    "name": "Sophia Brandt"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "shadow-cljs watch app",
+    "release": "shadow-cljs release app",
+    "server": "shadow-cljs server",
+    "clean": "rm -rf target && rm -rf public/js",
+    "clean-win": "rmdir /s /q public/js & rmdir /s /q target"
+  },
+  "dependencies": {
+    "create-react-class": "^15.6.3",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "shadow-cljs": "^2.7.17",
+    "tailwindcss": "^0.7.4"
+  }
+}
