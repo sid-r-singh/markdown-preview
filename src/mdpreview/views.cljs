@@ -12,10 +12,9 @@
   []
   (let [text (:value @app-state)]
     [:div.flex.center.justify-center
+     [:label {:html-for "markdown text"}]
      [:textarea.fl.w-90.h5.ma3.pa2.br3.b--black-20.outline-0.
       {:placeholder text
-       :label "markdown input"
-       :html-for "markdown input"
        :value text
        :on-focus #(clear-textarea %)
        :on-change #(update-preview %)}]]))

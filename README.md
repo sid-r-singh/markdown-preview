@@ -25,6 +25,10 @@ The app stores the state in a separate `state.cljs` file but you could easily us
 - [react-markdown](https://github.com/rexxars/react-markdown)
 - [Tachyons](http://tachyons.io/)
 
+## Further Reading
+
+I wrote [a blog post about this project where I explain the code](https://www.rockyourcode.com/how-to-build-a-markdown-preview-app-with-reagent).
+
 ## Credits
 
 Thanks to Jacek Schae for his [Shadow Reagent Template](https://github.com/jacekschae/shadow-reagent).
