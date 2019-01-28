@@ -12,12 +12,12 @@
   []
   (let [text (:value @app-state)]
     [:div.flex.center.justify-center
-     [:label {:html-for "markdown text"}]
-     [:textarea.fl.w-90.h5.ma3.pa2.br3.b--black-20.outline-0.
-      {:placeholder text
-       :value text
-       :on-focus #(clear-textarea %)
-       :on-change #(update-preview %)}]]))
+     [:label.w-90.ma3.br3.b--black-20.outline-0
+      [:textarea.w-100.h5.pa2.br3
+       {:placeholder text
+        :value text
+        :on-focus #(clear-textarea %)
+        :on-change #(update-preview %)}]]]))
 
 (defn preview
   []
